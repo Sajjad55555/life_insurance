@@ -37,6 +37,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 
 
+
 **Bilkul bhai! Main aapke liye step-by-step documentation tayyar karta hoon. Yeh documentation frontend (Next.js) aur backend (FastAPI) ko alag-alag sections mein cover karegi. Chaliye shuru karte hain! 🚀**
 
 ---
