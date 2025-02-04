@@ -34,3 +34,47 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-white text-gray-700 py-6 mt-6">
+      <div className="h-full w-full px-6 flex flex-col md:flex-row justify-between items-center">
+        <div className="text-center  border-b-2 md:text-left">
+          <p className="text-[15px]  text-[#767676] font-semibold">
+            Lina Life Insurance Compliance Supervisor Confirmation No. 2024-M01153 (2024-12-30–2025-12-29)
+          </p>
+        </div>
+        
+        <div className="mt-4 md:mt-0">
+          <ul className="flex space-x-6 justify-center md:justify-start">
+            <li>
+              <span className="text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                Privacy Policy
+              </span>
+            </li>
+            <li>
+              <span className="text-blue-600 hover:text-blue-800 transition-colors duration-300 cursor-pointer">
+                Lina Life
+              </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="text-center text-sm mt-4">
+        <p>
+          03156-48 Sambong-ro, Jongno-gu, Seoul (188 Cheongjin-dong) Lina Tower
+        </p>
+        <p>CEO: Jo Ji-eun</p>
+        <p>Business Registration Number: 104-81-85673</p>
+        <p>&copy; LINA Life Insurance Co., Ltd. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
