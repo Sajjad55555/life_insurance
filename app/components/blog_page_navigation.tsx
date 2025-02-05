@@ -1,0 +1,74 @@
+"use client";
+import React, { useState, useEffect } from "react";
+import Related_Product from "./related_product";
+import Blog_Detail from "./blog_detail";
+import Blog_Review from "./blog_review";
+
+interface BlogPageNavigationProps {
+  image: string; // comes from the selected profile's image
+  resetTrigger: number; // a counter that increments on each profile click
+}
+
+export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNavigationProps) {
+  const [activePage, setActivePage] = useState("related-products");
+
+  // Reset activePage to "related-products" whenever resetTrigger changes.
+  useEffect(() => {
+    setActivePage("related-products");
+  }, [resetTrigger]);
+
+  // Render content based on the activePage
+  const renderContent = () => {
+    if (activePage === "related-products") {
+      return <Related_Product product_data={image} />;
+    }
+    if (activePage === "details") {
+      return <Blog_Detail />;
+    }
+    if (activePage === "reviews") {
+      return <Blog_Review />;
+    }
+    return null;
+  };
+
+  return (
+    <div className="flex flex-col justify-center items-center mt-4 md:mt-8">
+      {/* Navigation Buttons */}
+      <div className="w-full border border-black flex items-center justify-center">
+        <button
+          onClick={() => setActivePage("related-products")}
+          className={`w-[366px] h-[70px] border border-black ${
+            activePage === "related-products"
+              ? "bg-white text-blue-700 border-b-8 border-blue-700"
+              : "bg-white text-gray-700"
+          }`}
+        >
+          Related Products
+        </button>
+        <button
+          onClick={() => setActivePage("details")}
+          className={`w-[366px] h-[70px] border border-black ${
+            activePage === "details"
+              ? "bg-white text-blue-700 border-b-8 border-blue-700"
+              : "bg-white text-gray-700"
+          }`}
+        >
+          Details
+        </button>
+        <button
+          onClick={() => setActivePage("reviews")}
+          className={`w-[366px] h-[70px] border border-black ${
+            activePage === "reviews"
+              ? "bg-white text-blue-700 border-b-8 border-blue-700"
+              : "bg-white text-gray-700"
+          }`}
+        >
+          Reviews
+        </button>
+      </div>
+
+      {/* Render the content dynamically */}
+      <div className="mt-8">{renderContent()}</div>
+    </div>
+  );
+}
