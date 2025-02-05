@@ -35,9 +35,12 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
+<<<<<<< HEAD
+=======
 
 
 
+>>>>>>> 0931dc1899eea82f252769953a7823c02ce08b3d
 **Bilkul bhai! Main aapke liye step-by-step documentation tayyar karta hoon. Yeh documentation frontend (Next.js) aur backend (FastAPI) ko alag-alag sections mein cover karegi. Chaliye shuru karte hain! 🚀**
 
 ---
@@ -292,4 +295,8 @@ export default function StripePayment() {
 
 **Bhai, yeh documentation aapke developers ke liye kaafi detailed hai. Agar kuch aur add karna ho ya clarify karna ho, to pooch sakte hain! 😊**  
 
+<<<<<<< HEAD
 **Frontend Developer** ko [Frontend Docs](#frontend-documentation-nextjs) aur **Backend Developer** ko [Backend Docs](#backend-documentation-fastapi) alag-alag share kar den. 🚀
+=======
+**Frontend Developer** ko [Frontend Docs](#frontend-documentation-nextjs) aur **Backend Developer** ko [Backend Docs](#backend-documentation-fastapi) alag-alag share kar den. 🚀
+>>>>>>> 0931dc1899eea82f252769953a7823c02ce08b3d
