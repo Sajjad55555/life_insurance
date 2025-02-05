@@ -43,7 +43,7 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
               : "bg-white text-gray-700"
           }`}
         >
-          Related Products
+          상품특징
         </button>
         <button
           onClick={() => setActivePage("details")}
@@ -53,7 +53,7 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
               : "bg-white text-gray-700"
           }`}
         >
-          Details
+        보장내역
         </button>
         <button
           onClick={() => setActivePage("reviews")}
@@ -63,7 +63,7 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
               : "bg-white text-gray-700"
           }`}
         >
-          Reviews
+     가입안내
         </button>
       </div>
 
