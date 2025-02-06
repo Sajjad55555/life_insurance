@@ -39,6 +39,7 @@ const menuData: { [key: string]: MenuItem } = {
       "X-Ray"
     ]
   },
+  
   Dementia: {
     title: "Dementia Care",
     content: [
@@ -83,7 +84,7 @@ export default function Navbar() {
   return (
     <div className="relative">
       {/* Desktop Navbar */}
-      <div className="w-full h-[120px] flex justify-between items-center px-4 md:px-10 bg-white shadow-sm">
+      <div className="w-full relative h-[120px] flex justify-between items-center px-4 md:px-10 bg-white shadow-sm">
         
         {/* Logo */}
         <div className="h-[40px] w-[200px] md:w-[300px]">
@@ -103,7 +104,7 @@ export default function Navbar() {
               key={item}
               className="cursor-pointer py-2 px-4 hover:text-blue-900 transition-colors"
               onMouseEnter={() => setShowDropdown(true)}
-            >
+            > 
               {item}
             </div>
           ))}
@@ -156,7 +157,7 @@ export default function Navbar() {
       {/* Mobile Sidebar */}
       {mobileMenuOpen && (
                <div className="fixed inset-0 bg-black bg-opacity-50 z-50">
-               <div className="w-full h-full bg-white flex">
+               <div className="w-full h-screen bg-white flex">
                  {/* Left Side - Categories */}
                  <div className="w-1/3 bg-gray-50 border-r p-4 overflow-y-auto">
                    <div className="flex justify-between items-center mb-6">
