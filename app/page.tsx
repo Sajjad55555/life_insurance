@@ -9,16 +9,17 @@ export default function Home() {
     <div className="">
       {/* nabar */}
       <div><Navbar/></div>
-      <div><Header/></div>
-      <div><Body/></div>
-      <div><Footer/></div>
+
       
       {/* Header */}
       <div><Header /></div>
+
       
       {/* Body */}
       <div><Body /></div>
-      <InsurancePopup /> {/* This is where your popup is rendered */}
+      {/* This is where your popup is rendered */}
+      <div className="hidden md:block"><InsurancePopup /> </div>
+      
 
       
       {/* Footer */}
@@ -26,5 +27,5 @@ export default function Home() {
 
       {/* Insurance Popup */}
     </div>
-  );
+  )
 }

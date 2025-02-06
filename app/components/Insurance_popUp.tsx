@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect, JSX } from 'react';
 import { motion } from 'framer-motion';
-import { FaArrowUp, FaPhoneAlt } from 'react-icons/fa';
 import Image from 'next/image';
 
 export default function InsurancePopup(): JSX.Element | null {
