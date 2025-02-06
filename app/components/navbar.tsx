@@ -83,7 +83,7 @@ export default function Navbar() {
   return (
     <div className="relative">
       {/* Desktop Navbar */}
-      <div className="w-full h-[120px] flex justify-between items-center px-4 md:px-10 bg-white shadow-sm">
+      <div className="w-full h-[120px] flex justify-between items-center px-4 md:px-24 bg-white shadow-sm">
         
         {/* Logo */}
         <div className="h-[40px] w-[200px] md:w-[300px]">

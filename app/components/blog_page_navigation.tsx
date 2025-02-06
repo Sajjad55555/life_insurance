@@ -34,7 +34,7 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
   return (
     <div className="flex flex-col justify-center items-center mt-4 md:mt-8">
       {/* Navigation Buttons */}
-      <div className="w-full border border-black flex items-center justify-center">
+      <div className="w-full border-b border-t border-black flex items-center justify-center">
         <button
           onClick={() => setActivePage("related-products")}
           className={`w-[366px] h-[70px] border border-black ${
