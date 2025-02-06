@@ -1,40 +1,38 @@
-import Image from "next/image"
-import ProfileList from "./profile_list"
+import Image from "next/image";
+import ProfileList from "./profile_list";
 
 export default function Body() {
   return (
-    <>
-    {/* main div */}
-    <div className='w-full'>
-        {/* first image */}
-        <div className='w-full h-[100px] hidden md:flex justify-center items-center mt-8'>
-        <div className="w-full h-auto  ">
-    <Image className="w-full" src="/body/form_prize.png" width={1500} height={1000} alt="bodyimage"/>
-    </div>
+    <div className='w-full bg-white'> {/* Force white background */}
+      {/* Hero Image Section */}
+      <div className='w-full h-[100px] hidden md:flex justify-center items-center mt-8 px-4'>
+        <div className="w-full max-w-6xl h-auto shadow-lg rounded-lg overflow-hidden">
+          <Image 
+            src="/body/form_prize.png" 
+            width={1500} 
+            height={1000} 
+            alt="Recommendation header"
+            className="w-full h-auto object-contain"
+          />
         </div>
-        {/* main text */}
-        <div className="w-full h-[50px] md:h-[70px] flex items-center justify-center md:mt-8 mt-1">
-            <div className="w-full md:w-[80%] h-full bg-blue-100 flex items-center justify-center">
-                <p className="text-xl md:text-[35px] font-bold text-[#150f96]">이런 분들에게 추천합니다!</p>
+      </div>
 
-            </div>
-
+      {/* Recommendation Heading */}
+      <div className="w-full flex items-center justify-center my-8 md:my-12">
+        <div className="w-full md:w-[80%] bg-blue-50 py-4 rounded-lg border-2 border-blue-200"> {/* Soft blue background */}
+          <h1 className="text-xl md:text-3xl font-bold text-blue-800 text-center">
+            이런 분들에게 추천합니다!
+          </h1>
         </div>
-        {/* profile card */}
-       
-         <div>
-         <ProfileList/>
-         </div>
-         <div>
-          
-         </div>
+      </div>
 
+      {/* Profile Cards Section */}
+      <div className="w-full px-4 md:px-8">
+        <ProfileList />
+      </div>
 
+      {/* Spacer for bottom padding */}
+      <div className="h-8"></div>
     </div>
-    
-    
-    
-    
-    </>
   )
 }

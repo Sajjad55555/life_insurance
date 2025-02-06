@@ -6,7 +6,7 @@ import Body from "./components/body";
 
 export default function Home() {
   return (
-    <div>
+    <div className="">
       {/* nabar */}
       <div><Navbar/></div>
       <div><Header/></div>

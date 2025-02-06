@@ -19,8 +19,8 @@ const ProfileList: React.FC = () => {
       name: "강OO",
       age: "남, 43세",
       description:
-        "나이들수록 치과 갈 일은 많은데 매번 나가는 치료비가 부담입니다.",
-      imageUrl: "/mnt/data/image.png", // Replace with the actual image path
+        "나이들수록 치과 갈 일은 많은 데 매번 나가는 치료비가 부담입니다.",
+      imageUrl: "/images/d2.png", // Replace with the actual image path
       additionalInfo:
         "이 사람은 치료가 자주 필요하고 보험 가입을 고려하고 있습니다.",
         image:"/blog_image/product_cancer_sub1.jpg"
@@ -29,7 +29,7 @@ const ProfileList: React.FC = () => {
       name: "이OO",
       age: "여, 30세",
       description: "치료가 필요하지만 시간과 비용이 부담스러워 고민 중입니다.",
-      imageUrl: "/mnt/data/image.png", // Replace with the actual image path
+      imageUrl: "/images/d2.png", // Replace with the actual image path
       additionalInfo:
         "이 사람은 시간과 비용을 절감할 방법을 찾고 있습니다.",
         image:"/blog_image/product_chimea_sub1.jpg"
@@ -38,7 +38,7 @@ const ProfileList: React.FC = () => {
       name: "박OO",
       age: "남, 50세",
       description: "장기적인 치료비가 걱정되어 보험에 가입하고 싶습니다.",
-      imageUrl: "/mnt/data/image.png", // Replace with the actual image path
+      imageUrl: "/images/d2.png", // Replace with the actual image path
       additionalInfo:
         "이 사람은 장기적인 치료비에 대비한 보험을 찾고 있습니다.",
         image:"/blog_image/product_teeth_sub1.jpg"
@@ -67,9 +67,8 @@ const ProfileList: React.FC = () => {
   }, [selectedProfile]);
 
   return (
-    <div>
-      {/* Profile Cards Section */}
-      <div className="flex flex-wrap justify-center">
+    <div className="bg-white min-h-screen p-8"> {/* Force white background */}
+      <div className="flex flex-wrap gap-7 justify-center items-center">
         {profiles.map((profile, index) => (
           <div
             key={index}
@@ -81,6 +80,7 @@ const ProfileList: React.FC = () => {
               age={profile.age}
               description={profile.description}
               imageUrl={profile.imageUrl}
+              isSelected={selectedProfile?.name === profile.name}
             />
           </div>
         ))}
