@@ -6,9 +6,12 @@ import InsurancePopup from "./components/Insurance_popUp"; // Import your popup 
 
 export default function Home() {
   return (
-    <div>
-      {/* Navbar */}
-      <div><Navbar /></div>
+    <div className="">
+      {/* nabar */}
+      <div><Navbar/></div>
+      <div><Header/></div>
+      <div><Body/></div>
+      <div><Footer/></div>
       
       {/* Header */}
       <div><Header /></div>
