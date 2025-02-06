@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import Related_Product from "./related_product";
-import Blog_Detail from "./blog_detail";
+import Blog_Detail from "./blog_detail2";
 import Blog_Review from "./blog_review";
 
 interface BlogPageNavigationProps {

@@ -1,5 +1,5 @@
 import React from 'react'
-export default function Blog_Detail() {
+export default function Blog_Detail2() {
   return (
     <div className='flex flex-col justify-center items-center '>
         {/* text */}
