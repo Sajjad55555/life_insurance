@@ -5,7 +5,7 @@ import Blog_Detail from "./blog_detail2";
 import Blog_Review from "./blog_review";
 
 interface BlogPageNavigationProps {
-  image: string; // comes from the selected profile's image
+  image: { title: string; description: string; icon: string; }[];
   resetTrigger: number; // a counter that increments on each profile click
 }
 
@@ -20,7 +20,7 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
   // Render content based on the activePage
   const renderContent = () => {
     if (activePage === "related-products") {
-      return <Related_Product product_data={image} />;
+      return <Related_Product product_dat={image} />;
     }
     if (activePage === "details") {
       return <Blog_Detail />;
