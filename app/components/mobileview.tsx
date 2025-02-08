@@ -6,48 +6,44 @@ interface BlogPageNavigationProps {
   image: string;
   name: string;
   resetTrigger: number;
-  isOpen: boolean; // Add isOpen prop
+  isOpen: boolean;
 }
+
 export default function Mobile_View({
   image,
   resetTrigger,
   name,
-  isOpen, // Check if the modal should be open
+  isOpen,
 }: BlogPageNavigationProps) {
-  const [localIsOpen, setLocalIsOpen] = useState(isOpen); // Local state for toggling modal
+  const [localIsOpen, setLocalIsOpen] = useState(isOpen);
 
-  const toggleModal = () => {
-    setLocalIsOpen(!localIsOpen); // Toggle local state when clicked
-  };
+  const toggleModal = () => setLocalIsOpen(!localIsOpen);
 
   useEffect(() => {
-    setLocalIsOpen(isOpen); // Sync with parent's isOpen prop when profile is selected
+    setLocalIsOpen(isOpen);
   }, [isOpen]);
 
   return (
-    <>
-      <div className="md:hidden flex relative w-full">
-        {/* Button to toggle visibility */}
-        <button
-          onClick={toggleModal} // Trigger toggle when user clicks the button
-          className="w-full h-[40px] items-center justify-center bg-gray-200 border-b border-gray-400"
-        >
-          <span>{name}</span>
-          <FaAngleDown
-            className={`text-lg absolute right-2 top-2 ${localIsOpen ? "rotate-180" : ""}`}
-          />
-        </button>
+    <div className="md:hidden w-full">
+      {/* Toggle Button - Centered Text */}
+      <button
+        onClick={toggleModal}
+        className="w-full h-[40px] flex items-center bg-gray-200 border-b border-gray-400 relative"
+      >
+        <span className="flex-1 text-center">{name}</span>
+        <FaAngleDown
+          className={`text-lg absolute right-2 transition-transform ${
+            localIsOpen ? "rotate-180" : ""
+          }`}
+        />
+      </button>
 
-        {/* Modal Content */}
-        {localIsOpen && (
-          <div
-            className="absolute top-full left-0 w-full bg-white shadow-lg z-50 mt-2 p-4 rounded-lg border border-gray-200"
-            style={{ zIndex: 1000 }} // Ensure this has the highest z-index
-          >
-            <Blog_Page_Navigation image={image} resetTrigger={resetTrigger} />
-          </div>
-        )}
-      </div>
-    </>
+      {/* Modal - Neeche Content Ko Push Karega */}
+      {localIsOpen && (
+        <div className="relative w-full bg-white shadow-lg z-50 mt-2 p-4 rounded-lg border border-gray-200">
+          <Blog_Page_Navigation image={image} resetTrigger={resetTrigger} />
+        </div>
+      )}
+    </div>
   );
 }

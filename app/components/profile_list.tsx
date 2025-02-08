@@ -110,6 +110,8 @@ const ProfileList: React.FC = () => {
               isOpen={selectedProfile?.id === profile.id} // Check if this profile is selected
             />
           ))}
+          
+
         </div>
       </div>
     </div>
