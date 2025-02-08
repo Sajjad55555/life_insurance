@@ -20,10 +20,11 @@ function Blog_Review() {
 
   return (
     <>
-      <div className="flex flex-wrap w-full justify-center md:px-16 px-4 items-center mt-4 md:mt-8">
+      <div className=" w-full flex justify-center">
+        <div className="md:w-[85%] w-full flex justify-between">
         <button
           onClick={() => setActivePage("blog details")}
-          className={`w-[325px] h-[70px]  ${
+          className={`w-[70px] md:w-[325px] h-[70px] text-sm md:text-xl  ${
             activePage === "blog details"
               ? "bg-white text-blue-700 border-b-4 border-blue-700"
               : "bg-white text-gray-700"
@@ -33,7 +34,7 @@ function Blog_Review() {
         </button>
         <button
           onClick={() => setActivePage("details")}
-          className={`w-[325px] h-[70px] ${
+          className={`w-[70px] md:w-[325px] h-[70px] text-sm md:text-xl ${
             activePage === "details"
               ? "bg-white text-blue-700 border-b-4 border-blue-700"
               : "bg-white text-gray-700"
@@ -43,7 +44,7 @@ function Blog_Review() {
         </button>
         <button
           onClick={() => setActivePage("reviews")}
-          className={`w-[325px] h-[70px]  ${
+          className={`w-[70px] md:w-[325px] h-[70px] text-sm md:text-xl  ${
             activePage === "reviews"
               ? "bg-white text-blue-700 border-b-4 border-blue-700"
               : "bg-white text-gray-700"
@@ -53,7 +54,7 @@ function Blog_Review() {
         </button>
         <button
           onClick={() => setActivePage("products")}
-          className={`w-[325px] h-[70px]  ${
+          className={`w-[70px] md:w-[325px] h-[70px] text-sm md:text-xl  ${
             activePage === "products"
               ? "bg-white text-blue-700 border-b-4 border-blue-700"
               : "bg-white text-gray-700"
@@ -61,6 +62,7 @@ function Blog_Review() {
         >
           products
         </button>
+        </div>
       </div>
       
       <div className="mt-8">{renderContent()}</div>
