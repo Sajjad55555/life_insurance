@@ -3,17 +3,39 @@ import { useState, useRef, useEffect } from "react";
 import ProfileCard from "./profilecard";
 import Blog_Page_Navigation from "./blog_page_navigation";
 import Mobile_View from "./mobileview";
-import { FaAngleDown } from "react-icons/fa6";
 
+const cardData = [
+  {
+    title: "업계최초로 보장",
+    description: "표적항암약물허가 치료비집중보장(특약)",
+    icon: "/d2.PNG", // Replace with actual image paths
+  },
+  {
+    title: "발생률 높은 암도 든든",
+    description: "유방암, 전립선암도 일반암과 동일하게 보장",
+    icon: "/d4.PNG", // Replace with actual image paths
+  },
+  {
+    title: "최신 항암치료도 든든(특약)",
+    description: "3세대 면역항암제 치료와 약물, 방사선치료도 보장",
+    icon: "/d2.PNG", // Replace with actual image paths
+  },
+  {
+    title: "생활자금 매월 지급(특약)",
+    description: "일상까지 안심할 수 있도록, 매월 최대 100만원 보장",
+    icon: "/d4.PNG", // Replace with actual image paths
+  },
+];
 interface Profile {
   name: string;
   age: string;
   description: string;
   imageUrl: string;
   additionalInfo: string;
-  image: string;
+  image: { title: string; description: string; icon: string; }[];
   id: number;
 }
+
 
 const ProfileList: React.FC = () => {
   // State to track which profile is selected
@@ -33,7 +55,7 @@ const ProfileList: React.FC = () => {
       imageUrl: "/images/d2.png",
       additionalInfo:
         "이 사람은 치료가 자주 필요하고 보험 가입을 고려하고 있습니다.",
-      image: "/blog_image/product_cancer_sub1.jpg",
+      image:cardData,
     },
     {
       id: 2,
@@ -43,7 +65,7 @@ const ProfileList: React.FC = () => {
       imageUrl: "/images/d2.png",
       additionalInfo:
         "이 사람은 시간과 비용을 절감할 방법을 찾고 있습니다.",
-      image: "/blog_image/product_chimea_sub1.jpg",
+      image:cardData,
     },
     {
       id: 4,
@@ -53,7 +75,7 @@ const ProfileList: React.FC = () => {
       imageUrl: "/images/d2.png",
       additionalInfo:
         "이 사람은 장기적인 치료비에 대비한 보험을 찾고 있습니다.",
-      image: "/blog_image/product_teeth_sub1.jpg",
+      image:cardData,
     },
   ];
 
@@ -93,7 +115,7 @@ const ProfileList: React.FC = () => {
       {/* Blog Navigation Section with ref for scrolling */}
       <div className="hidden md:block" ref={blogNavRef}>
         <Blog_Page_Navigation
-          image={selectedProfile ? selectedProfile.image : "/blog_image/product_cancer_sub1.jpg"}
+          image={selectedProfile ? selectedProfile.image : cardData}
           resetTrigger={resetTrigger}
         />
       </div>
@@ -110,8 +132,6 @@ const ProfileList: React.FC = () => {
               isOpen={selectedProfile?.id === profile.id} // Check if this profile is selected
             />
           ))}
-          
-
         </div>
       </div>
     </div>

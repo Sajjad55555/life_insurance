@@ -3,7 +3,7 @@ import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 import Body from "./components/body";
 import InsurancePopup from "./components/Insurance_popUp"; // Import your popup component
-import Card from "./components/card";
+
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
       
 
       {/* <CardContainer/> */}
-      <Card/>
+      {/* <Card/> */}
       {/* Footer */}
       <div><Footer /></div>
 
