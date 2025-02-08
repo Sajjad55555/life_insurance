@@ -27,7 +27,7 @@ export default function Body() {
       </div>
 
       {/* Profile Cards Section */}
-      <div className="w-full px-4 md:px-8">
+      <div className="w-full  md:px-8">
         <ProfileList />
       </div>
 
