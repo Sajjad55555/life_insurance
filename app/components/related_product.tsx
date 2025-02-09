@@ -15,18 +15,19 @@ export default function Related_Product(prop:RealtedTypes) {
         {/* Card Group 1 */}
         <div className="flex flex-wrap gap-6 justify-center">
           {prop.product_dat.slice(0, 2).map((card, index) => (
-            <div key={index} className="w-full sm:w-[480px] h-[300px] sm:h-[350px] flex items-center gap-4 rounded-2xl text-white border-[2px] border-[#e5e7eb]">
-              <div className="ml-10">
+            <div key={index} className="w-full sm:w-[480px] h-[130px] sm:h-[350px] flex items-center gap-4 rounded-2xl text-white border-[2px] border-[#e5e7eb]">
+              <div className="h-[100px] w-[150px] md:h-[150px] md:w-[250px]">
                 <Image
                   src={card.icon}
                   alt={`icon-${index}`}
                   width={100}
                   height={100}
+                  className='h-full w-full'
                 />
               </div>
-              <div className="ml-5">
-                <h1 className="font-extrabold text-[#150f96] text-[30px]">{card.title}</h1>
-                <p className="text-slate-900 font-semibold text-[25px]">{card.description}</p>
+              <div className="">
+                <h1 className="md:font-extrabold font-semibold text-[#150f96] md:text-[30px] text-[15px]">{card.title}</h1>
+                <p className="text-slate-900 font-medium md:font-semibold text-[13px] md:text-[25px]">{card.description}</p>
               </div>
             </div>
           ))}
@@ -34,18 +35,19 @@ export default function Related_Product(prop:RealtedTypes) {
         {/* Card Group 2 */}
         <div className="flex flex-wrap gap-6 justify-center">
           {prop.product_dat.slice(2).map((card, index) => (
-            <div key={index} className="w-full sm:w-[480px] h-[300px] sm:h-[350px] flex items-center gap-4 rounded-2xl text-white border-[2px] border-[#e5e7eb]">
-              <div className="ml-10">
+            <div key={index} className="w-full sm:w-[480px] h-[130px] sm:h-[350px] flex items-center gap-4 rounded-2xl text-white border-[2px] border-[#e5e7eb]">
+              <div className="h-[100px] w-[150px] md:h-[150px] md:w-[250px]">
                 <Image
                   src={card.icon}
                   alt={`icon-${index + 2}`}
                   width={100}
                   height={100}
+                  className='w-full h-full'
                 />
               </div>
-              <div className="ml-5">
-                <h1 className="font-extrabold text-[#150f96] text-[30px]">{card.title}</h1>
-                <p className="text-slate-900 font-semibold text-[25px]">{card.description}</p>
+              <div className="">
+                <h1 className="md:font-extrabold font-semibold text-[#150f96] md:text-[30px] text-[15px]">{card.title}</h1>
+                <p className="text-slate-900 font-medium md:font-semibold text-[13px] md:text-[25px]">{card.description}</p>
               </div>
             </div>
           ))}
