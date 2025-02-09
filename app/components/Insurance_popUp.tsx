@@ -9,7 +9,7 @@ export default function InsurancePopup(): JSX.Element | null {
 
   useEffect(() => {
     const handleScroll = () => {
-      const headerHeight = document.querySelector('header')?.offsetHeight || 0;
+      const headerHeight = document.querySelector('header')?.offsetHeight || 550;
       setIsOpen(window.scrollY > headerHeight);
     };
 
