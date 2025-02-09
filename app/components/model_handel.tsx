@@ -13,7 +13,7 @@ export default function Model_Handel() {
   const [, setIsMobile] = useState(false);
   const [activeModel, setActiveModel] = useState<number | null>(null);
 
-  // Mobile detection और auto-open (हर बार चेक करेगा)
+ 
   useEffect(() => {
     const checkMobile = () => {
       const isMobileDevice = window.matchMedia("(max-width: 768px)").matches;
