@@ -23,7 +23,7 @@ export default function Home() {
       
 
       {/* <CardContainer/> */}
-      <Card/>
+      {/* <Card/> */}
       {/* Footer */}
       <div><Footer /></div>
 
