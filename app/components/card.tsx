@@ -26,12 +26,12 @@ const cardData = [
 
 function Card() {
   return (
-    <div className="flex flex-col w-full h-full px-auto py-auto gap-6 items-center justify-center">
+    <div className="flex flex-col w-full bg-black h-full px-auto py-auto gap-6 items-center justify-center">
       {/* Card Group 1 */}
       <div className="flex flex-wrap gap-6 justify-center">
         {cardData.slice(0, 2).map((card, index) => (
           <div key={index} className="w-full sm:w-[480px] h-[300px] sm:h-[350px] flex items-center gap-4 rounded-2xl text-white border-[2px] border-[#e5e7eb]">
-            <div className="ml-10">
+            <div className="ml-10 h-[100px] w-[100px] bg-red-400">
               <Image
                 src={card.icon}
                 alt={`icon-${index}`}
@@ -40,7 +40,7 @@ function Card() {
               />
             </div>
             <div className="ml-5">
-              <h1 className="font-extrabold text-[#150f96] text-[30px]">{card.title}</h1>
+              <h1 className="md:font-extrabold font-semibold text-[#150f96] md:text-[30px] text-[15px]">{card.title}</h1>
               <p className="text-slate-900 font-semibold text-[25px]">{card.description}</p>
             </div>
           </div>

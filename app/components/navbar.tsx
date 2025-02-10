@@ -102,7 +102,7 @@ export default function Navbar() {
           {Object.keys(menuData).map((item) => (
             <div
               key={item}
-              className="cursor-pointer py-2 px-4 hover:text-blue-900 transition-colors"
+              className="cursor-pointer py-2 px-4 hover:text-[#150f96] transition-colors"
               onMouseEnter={() => setShowDropdown(true)}
             > 
               {item}
@@ -112,13 +112,13 @@ export default function Navbar() {
 
         {/* Desktop Phone */}
         <div className="hidden md:flex items-center font-bold gap-2">
-          <FaSquarePhone className="text-3xl text-blue-900" />
-          <div className="text-2xl text-blue-900">080-410-4100</div>
+          <FaSquarePhone className="text-3xl text-[#150f96]" />
+          <div className="text-2xl text-[#150f96]">080-410-4100</div>
         </div>
 
         {/* Mobile Icons */}
         <div className="flex md:hidden gap-4">
-          <button className="bg-blue-900 w-[98px] h-[34px] rounded-full flex items-center justify-center gap-1">
+          <button className="bg-[#150f96] w-[98px] h-[34px] rounded-full flex items-center justify-center gap-1">
             <FaSquarePhone className="text-white"/>
             <span className="text-white text-sm">helpline</span>
           </button>
@@ -140,7 +140,7 @@ export default function Navbar() {
           <div className="grid grid-cols-4 gap-8 p-8 border-t-2 border-blue-100">
             {Object.entries(menuData).map(([key, value]) => (
               <div key={key} className="space-y-4">
-                <h3 className="text-xl font-bold text-blue-900 mb-4">{value.title}</h3>
+                <h3 className="text-xl font-bold text-[#150f96] mb-4">{value.title}</h3>
                 <ul className="space-y-2">
                   {value.content.map((service, index) => (
                     <li key={index} className="text-gray-600 hover:text-blue-800">

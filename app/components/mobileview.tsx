@@ -3,7 +3,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { useState, useEffect } from "react";
 
 interface BlogPageNavigationProps {
-  image: string;
+  image: { title: string; description: string; icon: string; }[];
   name: string;
   resetTrigger: number;
   isOpen: boolean;
