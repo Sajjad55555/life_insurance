@@ -23,13 +23,13 @@ export default function Header_Form() {
       {/* Gender Selection */}
       <div className="mb-4 flex border rounded-lg overflow-hidden">
         <button
-          className={`w-1/2 py-2 font-bold ${gender === '남' ? 'bg-blue-900 text-white' : 'bg-white text-blue-900'}`}
+          className={`w-1/2 py-2 font-bold ${gender === '남' ? 'bg-[#150f96] text-white' : 'bg-white text-blue-900'}`}
           onClick={() => setGender('남')}
         >
           남
         </button>
         <button
-          className={`w-1/2 py-2 font-bold ${gender === '여' ? 'bg-blue-900 text-white' : 'bg-white text-blue-900'}`}
+          className={`w-1/2 py-2 font-bold ${gender === '여' ? 'bg-[#150f96] text-white' : 'bg-white text-blue-900'}`}
           onClick={() => setGender('여')}
         >
           여
@@ -43,9 +43,9 @@ export default function Header_Form() {
       </div>
 
       {/* Contact Information */}
-      <div className="mt-6 bg-blue-100 py-4 rounded-2xl text-center border-t-2 border-blue-900">
+      <div className="mt-6 bg-blue-100 py-4 rounded-2xl text-center border-t-2 border-[#150f96]">
         <div className="font-bold">보험가입상담</div>
-        <div className="text-blue-900 text-2xl font-bold flex justify-center items-center mt-2">
+        <div className="text-[#150f96] text-2xl font-bold flex justify-center items-center mt-2">
           <FaPhoneAlt className="mr-2" /> 080-410-4100
         </div>
       </div>
