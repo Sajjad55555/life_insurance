@@ -13,7 +13,7 @@ export default function Home() {
 
       
       {/* Header */}
-      {/* <div><Header /></div> */}
+      <div><Header /></div>
 
       
       {/* Body */}
