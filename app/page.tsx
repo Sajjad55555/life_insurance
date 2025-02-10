@@ -4,6 +4,7 @@ import Footer from "./components/footer";
 import Body from "./components/body";
 import InsurancePopup from "./components/Insurance_popUp"; // Import your popup component
 import Model_Handel from "./components/model_handel";
+import FormComponent from "./components/formComponent";
 
 
 export default function Home() {
@@ -22,8 +23,13 @@ export default function Home() {
       {/* This is where your popup is rendered */}
       <div className="hidden md:block"><InsurancePopup /> </div>
       
-
+         
       {/* <CardContainer/> */}
+      <div className="hidden md:block">  <FormComponent/>
+        
+        </div>
+     
+    
       
       {/* Footer */}
       <div><Footer /></div>
