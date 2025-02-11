@@ -116,7 +116,7 @@ export default function Header() {
                 alt="phone image"
               />
             </div>
-            <div className="w-[90%] h-full mt-6">
+            <div className="w-[90%] h-full px-4 mt-6">
               <Header_Form />
             </div>
           </div>
