@@ -11,30 +11,30 @@ export default function Home() {
   return (
     <div className="">
       {/* nabar */}
-      <div><Navbar/></div>
+      <div><Navbar /></div>
 
-      
+
       {/* Header */}
       <div><Header /></div>
 
-      
+
       {/* Body */}
       <div><Body /></div>
       {/* This is where your popup is rendered */}
       <div className="hidden md:block"><InsurancePopup /> </div>
-      
-         
+
+
       {/* <CardContainer/> */}
-      <div className="hidden md:block">  <FormComponent/>
-        
-        </div>
-     
-    
-      
+      <div className="hidden md:block">  <FormComponent />
+
+      </div>
+
+
+
       {/* Footer */}
       <div><Footer /></div>
       {/* model */}
-      <div className="mt-[110px] md:hidden "><Model_Handel/></div>
+      {/* <div className="mt-[110px] md:hidden "><Model_Handel/></div> */}
 
       {/* Insurance Popup */}
     </div>
