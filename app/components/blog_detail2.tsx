@@ -768,10 +768,6 @@ const DentalInsurance: React.FC = () => {
       </div>
     </div>
 
-
-
-
-
   );
 };
 
