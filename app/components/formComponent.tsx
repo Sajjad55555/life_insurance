@@ -48,13 +48,13 @@ const FormComponent = () => {
                     <div className="flex items-center w-[100px] h-[50px] mt-5 justify-center bg-white border-2 border-[#150f96] rounded-lg">
                         <button
                             onClick={() => handleGenderSelect('male')}
-                            className={`w-full h-full ${gender === 'male' ? 'bg-[#150f96]' : 'bg-white'} rounded-l-lg`}
+                            className={`w-full h-full ${gender === 'male' ? 'bg-[#150f96] text-white' : 'bg-white text-black'} rounded-l-lg`}
                         >
                             남
                         </button>
                         <button
                             onClick={() => handleGenderSelect('female')}
-                            className={`w-full h-full ${gender === 'female' ? 'bg-[#150f96]' : 'bg-white'} rounded-r-lg`}
+                            className={`w-full h-full ${gender === 'female' ? 'bg-[#150f96] text-white' : 'bg-white text-black'} rounded-r-lg`}
                         >
                             여
                         </button>

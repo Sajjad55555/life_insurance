@@ -69,28 +69,29 @@ export default function Header() {
           >
             {swiperData.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className="top3-border flex h-[300px] items-center justify-center w-full bg-black rounded-[10px]">
-                  <div className="flex flex-col w-3/4">
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                <div className="top3-border flex h-[150px] md:h-[300px] items-center justify-center w-full bg-black rounded-[10px]">
+                  <div className="flex flex-col my-2 mx-2 w-3/4">
+                    <p className="nexonReg-font text-white text-[8px] md:text-[1.3rem] space-y-4 font-[900]">
                       {data.text1}
                     </p>
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[8px] md:text-[1.3rem] space-y-4 font-[900]">
                       {data.text2}
                     </p>
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[8px] md:text-[1.3rem] space-y-4 font-[900]">
                       {data.text3}
                     </p>
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[8px] md:text-[1.3rem] space-y-4 font-[900]">
                       {data.text4}
                     </p>
                   </div>
-                  <div className="w-[150px] h-[150px] flex justify-center items-center ml-10">
+                  <div className="md:w-[150px] w-[160px] h-[150px] md:h-[150px] flex justify-center items-center ml-10">
                     <Image
                       src={data.image}
                       width={150}
                       height={150}
                       alt="Slide image"
                       priority
+                      className="h-full w-full"
                     />
                   </div>
                 </div>
