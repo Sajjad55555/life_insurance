@@ -21,17 +21,17 @@ export default function Home() {
 
       {/* Body */}
       <div><Body /></div>
-       <div className="flex px-2 -mt-6 bg-gray-400 items-center md:hidden justify-center gap-3 text-[12px] text-[#150f96]">
-                      <span className="font-semibold text-[30px] mr-2">보험가입상담</span>
-                      <span className='text-[45px] rounded-full'>
-                      <FaSquarePhone />
-      
-                      </span>
-                      <a href="tel:080-410-4100" className="flex items-center">
-                        
-                          <span className="text-[15px] font-extrabold">080-410-4100</span>
-                      </a>
-                  </div>
+      <div className="flex px-2 -mt-8  bg-gray-400 items-center md:hidden justify-center gap-3 text-[12px] text-[#150f96]">
+        <span className="font-semibold text-[20px] mr-2">보험가입상담</span>
+        <span className='text-[25px] rounded-full'>
+          <FaSquarePhone />
+
+        </span>
+        <a href="tel:080-410-4100" className="flex items-center">
+
+          <span className="text-[15px] font-extrabold">080-410-4100</span>
+        </a>
+      </div>
       {/* This is where your popup is rendered */}
       <div className="hidden md:block"><InsurancePopup /> </div>
 
@@ -46,7 +46,7 @@ export default function Home() {
       {/* Footer */}
       <div><Footer /></div>
       {/* model */}
-      <div className="mt-[110px] md:hidden "><Model_Handel/></div>
+      <div className="mt-[110px] md:hidden "><Model_Handel /></div>
 
       {/* Insurance Popup */}
     </div>
