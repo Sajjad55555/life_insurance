@@ -95,7 +95,7 @@ export default function Navbar() {
         <div>홈페이지</div>
       </div>
       {/* Desktop Navbar */}
-      <div className="w-full h-[120px] flex justify-between items-center px-4 md:px-24 bg-white shadow-sm">
+      <div className="w-full h-[70px] md:h-[100px] flex justify-between items-center px-4 md:px-24 bg-white shadow-sm">
         {/* Logo with hover dropdown (desktop only) */}
         <div
           className="md:h-[40px] h-[30px] w-[150px] md:w-[300px]"
