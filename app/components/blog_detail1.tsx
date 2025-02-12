@@ -37,7 +37,7 @@ export default function Blog_Detail1() {
   return (
     <>
     <div className='w-full h-auto flex justify-center'>
-        <div className='w-full md:w-[85%] h-auto'>
+        <div className='w-full md:w-[85%]  h-auto '>
             <div className=' grid grid-cols-2 w-full md:grid-cols-4 justify-center items-center md:justify-between  gap-6'>
         {blogdetail_card.map((item:BlogCardTypes, index:number) => (
                     <Blogdetail2_Card 

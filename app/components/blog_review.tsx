@@ -20,7 +20,7 @@ function Blog_Review() {
 
   return (
     <>
-      <div className=" w-full flex justify-center">
+      <div className=" w-full flex">
         <div className="md:w-[85%] w-full flex justify-between">
           <button
             onClick={() => setActivePage("blog details")}

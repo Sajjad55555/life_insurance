@@ -11,7 +11,7 @@ export default function Related_Product(prop:RealtedTypes) {
       // Mock data arr  const products = prop.Product_data || []; // Default to empty array if no data is passed
       // const products = prop.product_data || []; // Default to empty array if no data is passed
   return (
-      <div className="flex flex-col w-full h-full px-auto py-auto gap-6 items-center justify-center">
+      <div className="flex flex-col w-full h-full  gap-6 items-center justify-center">
         {/* Card Group 1 */}
         <div className="flex flex-wrap gap-6 justify-center">
           {prop.product_dat.slice(0, 2).map((card, index) => (
