@@ -89,11 +89,16 @@ export default function Navbar() {
 
   return (
     <div className="relative school-font">
+      <div className="w-full h-[30px] text-[#999] text-[10px] flex md:justify-end items-center gap-2 border-b border-gray-300 px-4 font-medium cursor-pointer">
+        <div>고객센터│ </div>
+        <div>공시실│ </div>
+        <div>홈페이지</div>
+      </div>
       {/* Desktop Navbar */}
       <div className="w-full h-[120px] flex justify-between items-center px-4 md:px-24 bg-white shadow-sm">
         {/* Logo with hover dropdown (desktop only) */}
         <div
-          className="h-[40px] w-[200px] md:w-[300px]"
+          className="md:h-[40px] h-[30px] w-[150px] md:w-[300px]"
           onMouseEnter={handleDesktopHover}
         >
           <Image

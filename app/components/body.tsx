@@ -3,7 +3,7 @@ import ProfileList from "./profile_list";
 
 export default function Body() {
   return (
-    <div className='w-full bg-white'> {/* Force white background */}
+    <div className='w-full h-auto '> {/* Force white background */}
       {/* Hero Image Section */}
       <div className='w-full h-[100px] hidden md:flex justify-center items-center mt-8 px-4'>
         <div className="w-full h-auto shadow-lg rounded-lg overflow-hidden">
@@ -31,8 +31,6 @@ export default function Body() {
         <ProfileList />
       </div>
 
-      {/* Spacer for bottom padding */}
-      <div className="h-8"></div>
     </div>
   )
 }

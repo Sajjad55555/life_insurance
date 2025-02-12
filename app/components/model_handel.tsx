@@ -81,8 +81,7 @@ export default function Model_Handel() {
                   onClick={handleClose}
                   className="text-gray-500 hover:text-gray-700"
                 >
-                  ✕
-                </button>
+                             </button>
               </div>
               <div>
                 {activeModel === 2 && <Model2 onClose={handleClose} />}

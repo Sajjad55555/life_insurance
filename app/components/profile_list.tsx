@@ -93,7 +93,7 @@ const ProfileList: React.FC = () => {
   }, [selectedProfile]);
 
   return (
-    <div className="bg-white  min-h-screen md:p-8"> {/* Force white background */}
+    <div className="bg-white md:p-8"> {/* Force white background */}
       <div className="flex flex-wrap gap-7 justify-center items-center">
         {profiles.map((profile, index) => (
           <div

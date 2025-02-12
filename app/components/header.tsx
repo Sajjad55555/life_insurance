@@ -43,7 +43,7 @@ export default function Header() {
           성공적인 파트너가 있어야합니다!
         </h1>
 
-        <h2 className="text-[2rem] nexonReg-font font-[900] md:text-start  text-[#3a3d53] text-center">
+        <h2 className="text-[25px] md:text-[2rem] nexonReg-font font-[900] md:text-start  text-[#3a3d53] text-center">
           난 어떤 팀이 필요한걸까!
         </h2>
 
@@ -69,18 +69,18 @@ export default function Header() {
           >
             {swiperData.map((data, index) => (
               <SwiperSlide key={index}>
-                <div className="top3-border flex h-[300px] items-center justify-center w-full bg-black rounded-[10px]">
+                <div className="top3-border flex h-[300px] px-2 items-center justify-center w-full bg-black rounded-[10px]">
                   <div className="flex flex-col w-3/4">
-                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[14px] md:text-[1.5rem] space-y-4 font-[900]">
                       {data.text1}
                     </p>
-                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-[14px] text-white md:text-[1.5rem] space-y-4 font-[900]">
                       {data.text2}
                     </p>
-                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-[14px] text-white md:text-[1.5rem] space-y-4 font-[900]">
                       {data.text3}
                     </p>
-                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-[14px] text-white md:text-[1.5rem] space-y-4 font-[900]">
                       {data.text4}
                     </p>
                   </div>
