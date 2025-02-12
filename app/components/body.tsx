@@ -27,12 +27,12 @@ export default function Body() {
       </div>
 
       {/* Profile Cards Section */}
-      <div className="w-full  md:px-8">
+      <div className="w-full md:px-8 px-4"> {/* Added px-4 for mobile responsiveness */}
         <ProfileList />
       </div>
 
       {/* Spacer for bottom padding */}
       <div className="h-8"></div>
     </div>
-  )
+  );
 }
