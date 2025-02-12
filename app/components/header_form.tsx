@@ -41,7 +41,7 @@ export default function Header_Form() {
       
 
       {/* Action Buttons */}
-      <div className="flex justify-center mt-10 gap-2">
+      <div className="flex justify-center mt-10 gap-2">z
         <button className="bg-gray-400 text-white py-4 text-xl rounded-lg flex items-center gap-1" onClick={() => alert("보험료 확인 버튼이 클릭되었습니다.")}>간편 상담신청<FaAngleRight className='text-[40px] bg-gray-500 rounded-l-full py-2'  /></button>
         <button className="bg-[#FFD400] text-black py-4 rounded-lg flex items-center  justify-between gap-4 pl-2 text-xl font-bold " onClick={() => alert("간편 상담신청 버튼이 클릭되었습니다.")}>보험료 확인<FaAngleRight className='text-[40px] bg-yellow-500 text-white py-2 rounded-l-full w-[40px]' /></button>
       </div>
