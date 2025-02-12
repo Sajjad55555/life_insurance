@@ -93,7 +93,7 @@ const ProfileList: React.FC = () => {
   }, [selectedProfile]);
 
   return (
-    <div className="bg-white  min-h-screen p-8"> {/* Force white background */}
+    <div className="bg-white  min-h-screen md:p-8"> {/* Force white background */}
       <div className="flex flex-wrap gap-7 justify-center items-center">
         {profiles.map((profile, index) => (
           <div
@@ -113,7 +113,7 @@ const ProfileList: React.FC = () => {
       </div>
 
       {/* Blog Navigation Section with ref for scrolling */}
-      <div className="hidden md:block" ref={blogNavRef}>
+      <div className="hidden w-full md:block" ref={blogNavRef}>
         <Blog_Page_Navigation
           image={selectedProfile ? selectedProfile.image : cardData}
           resetTrigger={resetTrigger}

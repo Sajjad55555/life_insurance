@@ -32,13 +32,13 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
   };
 
   return (
-    <div className="flex flex-col justify-center items-center mt-4 md:mt-8">
+    <div className="flex w-full flex-col justify-center items-center mt-4 md:mt-8">
       {/* Navigation Buttons */}
-      <div className="w-full border-b border-t border-black flex items-center justify-center">
+      <div className="w-full md:border-b md:border-t md:border-black flex items-center md:justify-center justify-between">
         <button
           onClick={() => setActivePage("related-products")}
-          className={`w-[366px] h-[70px] border border-black ${activePage === "related-products"
-              ? "bg-white text-blue-700 border-b-8 border-blue-700"
+          className={`w-[366px] h-[70px] md:border border-black ${activePage === "related-products"
+              ? "bg-white text-blue-700 border-b-2 md:border-b-4 border-blue-700"
               : "bg-white text-gray-700"
             }`}
         >
@@ -46,8 +46,8 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
         </button>
         <button
           onClick={() => setActivePage("details")}
-          className={`w-[366px] h-[70px] border border-black ${activePage === "details"
-              ? "bg-white text-blue-700 border-b-8 border-blue-700"
+          className={`w-[366px] h-[70px] md:border border-black ${activePage === "details"
+              ? "bg-white text-blue-700 border-b-2 md:border-b-4 border-blue-700"
               : "bg-white text-gray-700"
             }`}
         >
@@ -55,8 +55,8 @@ export default function Blog_Page_Navigation({ image, resetTrigger }: BlogPageNa
         </button>
         <button
           onClick={() => setActivePage("reviews")}
-          className={`w-[366px] h-[70px] border border-black ${activePage === "reviews"
-              ? "bg-white text-blue-700 border-b-8 border-blue-700"
+          className={`w-[366px] h-[70px] md:border border-black ${activePage === "reviews"
+              ? "bg-white text-blue-700 border-b-2 md:border-b-4 border-blue-700"
               : "bg-white text-gray-700"
             }`}
         >
