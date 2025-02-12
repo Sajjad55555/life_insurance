@@ -178,5 +178,4 @@ const InsurancePanel = () => {
         </div>
     );
 };
-
 export default InsurancePanel;

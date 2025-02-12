@@ -1,12 +1,12 @@
 "use client"
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import Model from "./model";
 import Model2 from "./model2";
+import FloatingButton from "./model";
 
 // const Model1 = () => <div className="p-4">Mobile Auto-Open Model Content</div>;
 // const LocalModel2 = () => <div className="p-4">Model 2 Content</div>;
-const Model3 = () => <div className="p-4">Model 3 Content</div>;
+// const Model3 = () => <div className="p-4">Model 3 Content</div>;
 
 export default function Model_Handel() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,21 +45,26 @@ export default function Model_Handel() {
       {/* Fixed Buttons */}
       <div className="fixed bottom-0 left-0 right-0 bg-white border-t shadow-lg p-4 z-50">
         <div className="flex justify-center gap-4">
-          <button 
+          {/* <button 
             onClick={() => openModel(1)}
-            className="px-6 py-3 bg-blue-500 text-white rounded-lg"
+            className=" bg-gray-300 w-16 h-12 flex items-center justify-center rounded-xl
+            "
           >
-            Button 1
-          </button>
+            <FaPhoneVolume className="text-2xl font-semibold" />
+
+          </button> */}
+          <div>
+<FloatingButton/>
+          </div>
           <button 
             onClick={() => openModel(2)}
-            className="px-6 py-3 bg-green-500 text-white rounded-lg"
+            className="px-6 py-3 bg-[#FFD400] text-black font-bold rounded-lg"
           >
             Button 2
           </button>
           <button 
             onClick={() => openModel(3)}
-            className="px-6 py-3 bg-red-500 text-white rounded-lg"
+            className="px-6 py-3 bg-[#FFD400] font-bold text-black rounded-lg"
           >
             Button 3
           </button>
@@ -87,9 +92,9 @@ export default function Model_Handel() {
                 </button> */}
               </div>
               <div className="">
-                {activeModel === 1 && <Model onClose={handleClose} />}
+                {/* {activeModel === 1 && <Model onClose={handleClose} />} */}
                 {activeModel === 2 && <Model2 onClose={handleClose} />}
-                {activeModel === 3 && <Model3 />}
+                {activeModel === 3 && <Model2 onClose={handleClose} />}
               </div>
             </motion.div>
           </div>

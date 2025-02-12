@@ -37,6 +37,28 @@ const insuranceData:InsuranceTableProps[] = [
             { age: '40세', male: '25,400', female: '28,000' },
             { age: '45세', male: '23,900', female: '26,500' },
         ]
+    },
+    {
+        title: "선택특약",
+        name:"(무)신보철치료보장특약",
+        description: "기준: 가입금액 2,000만원, 만기환급금이 없는 순수보장형, 20년만기, 전기월납 (단위: 원)",
+        data: [
+            { age: '30세', male: '28,500', female: '30,700' },
+            { age: '35세', male: '27,000', female: '29,500' },
+            { age: '40세', male: '25,400', female: '28,000' },
+            { age: '45세', male: '23,900', female: '26,500' },
+        ]
+    },
+    {
+        title: "선택특약",
+        name:"(무)신보철치료보장특약",
+        description: "기준: 가입금액 2,000만원, 만기환급금이 없는 순수보장형, 20년만기, 전기월납 (단위: 원)",
+        data: [
+            { age: '30세', male: '28,500', female: '30,700' },
+            { age: '35세', male: '27,000', female: '29,500' },
+            { age: '40세', male: '25,400', female: '28,000' },
+            { age: '45세', male: '23,900', female: '26,500' },
+        ]
     }
 ];
 
