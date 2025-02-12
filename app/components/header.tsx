@@ -34,7 +34,7 @@ const swiperData = [
 
 export default function Header() {
   return (
-    <div className="w-full h-auto gap-4 flex flex-col md:flex-row md:px-20 md:mt-20 ">
+    <div className="w-full h-auto gap-4  flex flex-col md:flex-row md:px-20 md:mt-20 ">
       {/* Text and Image */}
       <div className="md:w-[55%] w-full h-[515px] md:h-[750px] px-4 py-4">
         <h1 className="md:text-[40px] school-font font-extrabold leading-[3rem] text[35px]  text-black md:text-start text-center">
@@ -71,16 +71,16 @@ export default function Header() {
               <SwiperSlide key={index}>
                 <div className="top3-border flex h-[300px] items-center justify-center w-full bg-black rounded-[10px]">
                   <div className="flex flex-col w-3/4">
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
                       {data.text1}
                     </p>
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
                       {data.text2}
                     </p>
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
                       {data.text3}
                     </p>
-                    <p className="nexonReg-font text-white text-[1.3rem] space-y-4 font-[900]">
+                    <p className="nexonReg-font text-white text-[1rem] space-y-4 font-[900]">
                       {data.text4}
                     </p>
                   </div>
