@@ -3,11 +3,11 @@ import React from 'react';
 
 const DentalInsurance: React.FC = () => {
   return (
-    <div className="w-full flex flex-col flex-wrap max-w-[400px] md:max-w-[1100px] mx-auto ">
+    <div className="w-full flex flex-col flex-wrap px-4 max-w-[300px] md:max-w-[1100px] mx-auto ">
       {/* ======================= 주계약 Section ======================= */}
-      <div className='flex flex-col gap-4 flex-wrap'>
+      <div className='flex text-[10px] md:text-[20px] w-full flex-col gap-4 flex-wrap'>
         <div>
-          <h2 className="text-2xl font-semibold mb-4">주계약</h2>
+          <h2 className="text-[10px] md:text-2xl font-semibold mb-4">주계약</h2>
           <h3 className="sr-only">주계약 (무)THE건강한치아보험 보장내역</h3>
           <p className="text-base mb-6">
             <span className="font-extrabold text-[#150f96]">
@@ -241,10 +241,10 @@ const DentalInsurance: React.FC = () => {
                   <dl className="space-y-1">
                     <dt className="font-medium text-[#150f96]">100만원</dt>
                     <dd>
-                      <span className="text-[#767676]">
-                        (다만, 보철치료보장개시일 이후 "보험계약일부터 2년이 지난 보험 계약해당일 전일" 이전에
-                        치아우식증(충치) 또는 치주질환(잇몸질환)을 원인으로 영구치를 발거한 경우 상기 금액의 50%를 지급함)
-                      </span>
+                    <span className="text-[#767676]">
+    (다만, 보철치료보장개시일 이후 &quot;보험계약일부터 2년이 지난 보험 계약해당일 전일&quot; 이전에
+    치아우식증(충치) 또는 치주질환(잇몸질환)을 원인으로 영구치를 발거한 경우 상기 금액의 50%를 지급함)
+</span>
                     </dd>
                   </dl>
                 </td>
@@ -271,10 +271,10 @@ const DentalInsurance: React.FC = () => {
                   <dl className="space-y-1">
                     <dt className="font-medium text-[#150f96]">50만원</dt>
                     <dd>
-                      <span className="text-[#767676]">
-                        (다만, 보철치료보장개시일 이후 "보험계약일부터 2년이 지난 보험계약해당일 전일" 이전에
-                        치아우식증(충치) 또는 치주질환(잇몸질환)을 원인으로 영구치를 발거한 경우 상기 금액의 50%를 지급함)
-                      </span>
+                    <span className="text-[#767676]">
+    (다만, 보철치료보장개시일 이후 &quot;보험계약일부터 2년이 지난 보험계약해당일 전일&quot; 이전에
+    치아우식증(충치) 또는 치주질환(잇몸질환)을 원인으로 영구치를 발거한 경우 상기 금액의 50%를 지급함)
+</span>
                     </dd>
                   </dl>
                 </td>
@@ -428,10 +428,10 @@ const DentalInsurance: React.FC = () => {
                   <dl className="space-y-1">
                     <dt className="font-bold text-[#150f96]">20만원</dt>
                     <dd>
-                      <span className="text-[#767676]">
-                        (다만, 크라운치료보장개시일 이후 "보험계약일부터 1년이 지난 보험계약해당일 전일" 이전에
-                        치아우식증(충치) 또는 치주질환(잇몸질환)을 원인으로 치아를 치료한 경우 상기 금액의 50%를 지급함)
-                      </span>
+                    <span className="text-[#767676]">
+    (다만, 크라운치료보장개시일 이후 &quot;보험계약일부터 1년이 지난 보험계약해당일 전일&quot; 이전에
+    치아우식증(충치) 또는 치주질환(잇몸질환)을 원인으로 치아를 치료한 경우 상기 금액의 50%를 지급함)
+</span>
                     </dd>
                   </dl>
                 </td>
@@ -597,9 +597,9 @@ const DentalInsurance: React.FC = () => {
                   <dl className="space-y-1">
                     <dt className="font-medium text-[#767676]">2만원</dt>
                     <dd>
-                      <span className="text-[#767676]">
-                        (약관 "주요치주질환(잇몸질환)치료분류표" 및 "주요치주질환치료 급여 인정 기준"에 따라 지급함)
-                      </span>
+                    <span className="text-[#767676]">
+    (약관 &quot;주요치주질환(잇몸질환)치료분류표&quot; 및 &quot;주요치주질환치료 급여 인정 기준&quot;에 따라 지급함)
+</span>
                     </dd>
                   </dl>
                 </td>
@@ -615,26 +615,27 @@ const DentalInsurance: React.FC = () => {
           <span className="sr-only">주의사항</span>
         </strong></div>
         <div>
-          <ul className="list-decimal list-inside text-[14px]  space-y-2 text-[#767676]">
-            <li>
-              주계약의 보험료 납입이 면제된 경우 또는 치아가 모두 상실된 경우에는 이 특약의 차회 이후 보험료 납입을 면제합니다.
-            </li>
-            <li>
-              최초계약의 경우 소액치과치료보장개시일은 계약일로부터 그 날을 포함하여 90일이 지난 날의 다음날로 하며, 부활(효력회복)계약의 경우에는 부활(효력회복)일을 포함하여 90일이 지난 날의 다음날로 합니다.
-            </li>
-            <li>
-              이미 치수치료(신경치료)를 받은 부위에 대하여 새로운 “치아우식증(충치), 치주질환(잇몸질환) 또는 재해”를 원인으로 하지 않는 수리, 복구, 대체치료를 한 경우에는 해당 치료보험금을 지급하지 않으며, 새로운 치아우식증(충치), 치주질환(잇몸질환) 또는 재해를 직접적인 원인으로 치수치료(신경치료)를 한 경우에는 해당 치료보험금을 지급합니다.
-            </li>
-            <li>
-              "주요치주질환치료 급여 인정 기준"은 약관 제11조(&quot;주요치주질환(잇몸질환)치료&quot;의 정의)에서 정한 기준에 따릅니다.
-            </li>
-            <li>
-              동일한 잇몸 부위에 두 가지 이상의 주요치주질환(잇몸질환)치료를 한 경우, 상위 치료에 대하여만 치료보험금을 지급합니다.
-            </li>
-            <li>
-              피보험자가 보험기간 중 사망한 경우에는 이 특약은 그 때부터 효력이 없으며, 사망 당시의 계약자적립액을 계약자에게 지급합니다.
-            </li>
-          </ul>
+        <ul className="list-decimal list-inside text-[14px] space-y-2 text-[#767676]">
+  <li>
+    주계약의 보험료 납입이 면제된 경우 또는 치아가 모두 상실된 경우에는 이 특약의 차회 이후 보험료 납입을 면제합니다.
+  </li>
+  <li>
+    최초계약의 경우 소액치과치료보장개시일은 계약일로부터 그 날을 포함하여 90일이 지난 날의 다음날로 하며, 부활(효력회복)계약의 경우에는 부활(효력회복)일을 포함하여 90일이 지난 날의 다음날로 합니다.
+  </li>
+  <li>
+    이미 치수치료(신경치료)를 받은 부위에 대하여 새로운 “치아우식증(충치), 치주질환(잇몸질환) 또는 재해”를 원인으로 하지 않는 수리, 복구, 대체치료를 한 경우에는 해당 치료보험금을 지급하지 않으며, 새로운 치아우식증(충치), 치주질환(잇몸질환) 또는 재해를 직접적인 원인으로 치수치료(신경치료)를 한 경우에는 해당 치료보험금을 지급합니다.
+  </li>
+  <li>
+    &quot;주요치주질환치료 급여 인정 기준&quot;은 약관 제11조(&quot;주요치주질환(잇몸질환)치료&quot;의 정의)에서 정한 기준에 따릅니다.
+  </li>
+  <li>
+    동일한 잇몸 부위에 두 가지 이상의 주요치주질환(잇몸질환)치료를 한 경우, 상위 치료에 대하여만 치료보험금을 지급합니다.
+  </li>
+  <li>
+    피보험자가 보험기간 중 사망한 경우에는 이 특약은 그 때부터 효력이 없으며, 사망 당시의 계약자적립액을 계약자에게 지급합니다.
+  </li>
+</ul>
+
         </div>
       </div>
 
