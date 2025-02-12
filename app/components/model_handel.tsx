@@ -32,7 +32,7 @@ export default function Model_Handel() {
 
   const handleClose = () => {
     setActiveModel(null);
-    localStorage.setItem('modalClosed', 'true');
+    localStorage.setItem('modalClosed', 'false');
   };
 
   const openModel = (modelNumber: number) => {

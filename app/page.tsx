@@ -34,7 +34,7 @@ export default function Home() {
       {/* Footer */}
       <div><Footer /></div>
       {/* model */}
-      {/* <div className="mt-[110px] md:hidden "><Model_Handel/></div> */}
+      <div className="mt-[110px] md:hidden "><Model_Handel/></div>
 
       {/* Insurance Popup */}
     </div>
