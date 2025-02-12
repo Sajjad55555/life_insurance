@@ -1,5 +1,5 @@
-"use client"
-import { useState } from 'react';
+"use client";
+import { useState } from "react";
 import Image from "next/image";
 import { FaSquarePhone } from "react-icons/fa6";
 import { HiOutlineBars3 } from "react-icons/hi2";
@@ -12,56 +12,55 @@ import { LuBicepsFlexed } from "react-icons/lu";
 interface MenuItem {
   title: string;
   content: string[];
-  icon: React.ReactNode; // Changed 'image' to 'icon' to use React icons
+  icon: React.ReactNode;
 }
 
 const menuData: { [key: string]: MenuItem } = {
   Teeth: {
     title: "Teeth",
-    content: [
-      "Teeth Whitening",
-      "Dental Implants",
-      "Braces",
-      "Root Canal"
-    ],
-    icon: <LiaToothSolid className="text-4xl text-blue-800" /> // Using the tooth icon here
+    content: ["Teeth Whitening", "Dental Implants", "Braces", "Root Canal"],
+    icon: <LiaToothSolid className="text-4xl text-blue-800" />,
   },
   Cancer: {
-    title: "Cancer ",
+    title: "Cancer",
     content: [
       "Chemotherapy",
       "Radiation Therapy",
       "Surgery",
-      "Palliative Care"
+      "Palliative Care",
     ],
-    icon: <LuHeartCrack className="text-4xl text-red-600" /> // Using heart crack icon here
+    icon: <LuHeartCrack className="text-4xl text-red-600" />,
   },
   Health: {
-    title: "Health ",
-    content: [
-      "Full Body Checkup",
-      "Blood Tests",
-      "ECG",
-      "X-Ray"
-    ],
-    icon: <LuBicepsFlexed className="text-4xl text-blue-600 " /> // Example icon for health
+    title: "Health",
+    content: ["Full Body Checkup", "Blood Tests", "ECG", "X-Ray"],
+    icon: <LuBicepsFlexed className="text-4xl text-blue-600" />,
   },
   Dementia: {
-    title: "Dementia ",
+    title: "Dementia",
     content: [
       "Memory Tests",
       "Cognitive Therapy",
       "Daily Assistance",
-      "Medication"
+      "Medication",
     ],
-    icon: <LuHeartCrack className="text-4xl text-yellow-600" /> // Example icon for dementia
-  }
+    icon: <LuHeartCrack className="text-4xl text-yellow-600" />,
+  },
 };
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [selectedMobileMenu, setSelectedMobileMenu] = useState<string | null>(null);
+  const [selectedMobileMenu, setSelectedMobileMenu] = useState<string | null>(
+    null
+  );
+
+  // A helper function to only trigger hover effects on desktop
+  const handleDesktopHover = () => {
+    if (window.innerWidth >= 768) {
+      setShowDropdown(true);
+    }
+  };
 
   // Mobile menu content renderer
   const renderMobileContent = () => {
@@ -90,20 +89,24 @@ export default function Navbar() {
 
   return (
     <div className="relative school-font">
+      <div className="w-full h-[30px] text-[#999] text-[10px] flex md:justify-end items-center gap-2 border-b border-gray-300 px-4 font-medium cursor-pointer">
+        <div>고객센터│ </div>
+        <div>공시실│ </div>
+        <div>홈페이지</div>
+      </div>
       {/* Desktop Navbar */}
-      <div className="w-full h-[120px] flex justify-between items-center px-4 md:px-24 bg-white shadow-sm">
-        
-        {/* Logo with dropdown on hover */}
-        <div 
-          className="h-[40px] w-[200px] md:w-[300px]" 
-          onMouseEnter={() => setShowDropdown(true)}
+      <div className="w-full h-[70px] md:h-[100px] flex justify-between items-center px-4 md:px-24 bg-white shadow-sm">
+        {/* Logo with hover dropdown (desktop only) */}
+        <div
+          className="md:h-[40px] h-[30px] w-[150px] md:w-[300px]"
+          onMouseEnter={handleDesktopHover}
         >
-          <Image 
-            src="/Navbar/logo.png" 
-            alt="Logo" 
-            width={400} 
+          <Image
+            src="/Navbar/logo.png"
+            alt="Logo"
+            width={400}
             height={400}
-            className="w-full h-full" 
+            className="w-full h-full"
           />
         </div>
 
@@ -113,18 +116,17 @@ export default function Navbar() {
             <div
               key={item}
               className="flex items-center cursor-pointer py-2 px-4 hover:text-[#150f96] transition-colors"
-              onMouseEnter={() => setShowDropdown(true)}
+              onMouseEnter={handleDesktopHover}
             >
-              {/* Icon next to the title can be added here if needed */}
               {menuData[item].title}
             </div>
           ))}
         </div>
 
-        {/* Desktop Phone with dropdown on hover */}
-        <div 
+        {/* Desktop Phone with hover dropdown (desktop only) */}
+        <div
           className="hidden md:flex items-center font-bold gap-2"
-          onMouseEnter={() => setShowDropdown(true)}
+          onMouseEnter={handleDesktopHover}
         >
           <FaSquarePhone className="text-3xl text-[#150f96]" />
           <div className="text-2xl text-[#150f96]">080-410-4100</div>
@@ -148,7 +150,7 @@ export default function Navbar() {
       {showDropdown && (
         <div
           className="absolute top-full left-0 w-full bg-white shadow-lg z-50"
-          onMouseEnter={() => setShowDropdown(true)}
+          onMouseEnter={handleDesktopHover}
           onMouseLeave={() => setShowDropdown(false)}
         >
           <div className="grid items-center px-80 grid-cols-4 gap-8 p-6 border-t-2 border-blue-100">
@@ -156,7 +158,9 @@ export default function Navbar() {
               <div key={key} className="space-y-4 border-r border-[#d6cbc9]">
                 <div className="flex gap-2 items-center">
                   <div>{value.icon}</div>
-                  <h3 className="text-xl font-bold text-[#150f96]">{value.title}</h3>
+                  <h3 className="text-xl font-bold text-[#150f96]">
+                    {value.title}
+                  </h3>
                 </div>
                 <ul className="space-y-2">
                   {value.content.map((service, index) => (
@@ -187,16 +191,16 @@ export default function Navbar() {
                   className="cursor-pointer text-gray-600"
                 />
               </div>
-              
+
               <div className="space-y-3">
                 {Object.keys(menuData).map((key) => (
                   <button
                     key={key}
                     onClick={() => setSelectedMobileMenu(key)}
                     className={`w-full text-left p-3 rounded-lg ${
-                      selectedMobileMenu === key 
-                        ? 'bg-blue-100 text-blue-900'
-                        : 'hover:bg-gray-100'
+                      selectedMobileMenu === key
+                        ? "bg-blue-100 text-blue-900"
+                        : "hover:bg-gray-100"
                     }`}
                   >
                     <div className="flex items-center text-[12px] justify-center">
@@ -209,9 +213,7 @@ export default function Navbar() {
             </div>
 
             {/* Right Side - Content */}
-            <div className="w-2/3 overflow-y-auto">
-              {renderMobileContent()}
-            </div>
+            <div className="w-2/3 overflow-y-auto">{renderMobileContent()}</div>
           </div>
         </div>
       )}

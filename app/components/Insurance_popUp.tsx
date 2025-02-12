@@ -77,7 +77,7 @@ export default function InsurancePopup(): JSX.Element | null {
         animate={{ x: 0 }}
         exit={{ x: 300 }}
         transition={{ delay: 0.5 }}
-        className="fixed  right-28 bottom-36 "
+        className="fixed  right-28  bottom-28 "
         onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
       >
         <div className="  p-10   ">

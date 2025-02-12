@@ -5,9 +5,9 @@ const DentalInsurance: React.FC = () => {
   return (
     <div className="w-full flex flex-col flex-wrap px-4 max-w-[300px] md:max-w-[1100px] mx-auto ">
       {/* ======================= 주계약 Section ======================= */}
-      <div className='flex text-[10px] md:text-[20px] w-full flex-col gap-4 flex-wrap'>
+      <div className='flex text-[8px] md:text-[20px] w-full flex-col gap-4 flex-wrap'>
         <div>
-          <h2 className="text-[10px] md:text-2xl font-semibold mb-4">주계약</h2>
+          <h2 className="text-[8px] md:text-2xl font-semibold mb-4">주계약</h2>
           <h3 className="sr-only">주계약 (무)THE건강한치아보험 보장내역</h3>
           <p className="text-base mb-6">
             <span className="font-extrabold text-[#150f96]">
@@ -159,7 +159,7 @@ const DentalInsurance: React.FC = () => {
           </strong>
         </div>
         <div className="overflow-x-auto">
-          <ul className="list-decimal list-inside text-[14px] space-y-2 text-[#767676]">
+          <ul className="list-decimal list-inside text-[8px] md:text-[14px] space-y-2 text-[#767676]">
             <li>
               피보험자가 보험기간 중 사망하거나 약관 제4조(&quot;영구치&quot;의 정의)에서 정한 영구치가 모두 상실되어 약관 제10조(보험금의 지급사유)에서 정하는 보험금 지급사유가 더 이상 발생할 수 없는 경우에는 이 계약은 그 때부터 효력이 없으며, 효력이 없어진 당시의 계약자적립액을 계약자에게 지급합니다.
             </li>
@@ -185,7 +185,7 @@ const DentalInsurance: React.FC = () => {
       {/* ============ 선택특약 (무)신보철치료보장특약 Section ============ */}
       <div className='flex flex-col  flex-wrap'>
         <div>
-          <h2 className="text-2xl school-font md:mb-6">선택특약</h2>
+          <h2 className="text-[10px] md:text-2xl school-font md:mb-6">선택특약</h2>
           <div className="flex flex-col school-font md:flex-row md:justify-between">
             <p className="text-[15px] nexonReg-font mb-3 text-[#150f96]">
               (무)신보철치료보장특약
@@ -195,7 +195,7 @@ const DentalInsurance: React.FC = () => {
             </span>
           </div>
         </div>
-        <div className="overflow-x-auto text-[14px] nexonReg-font">
+        <div className="overflow-x-auto text-[8px] md:text-[14px] nexonReg-font">
           <table className="w-full mb-6 border-[#767676]">
             <caption className="sr-only">
               선택특약 (무)신보철치료보장특약 보장내역;급부명, 지급사유, 지급금액의 항목으로 정보 제공
@@ -340,15 +340,15 @@ const DentalInsurance: React.FC = () => {
 
       <div className="flex flex-row gap-2 mb-8">
         <div>
-          <strong className="block text-lg school-font mb-2 text-[#150f96]">
+          <strong className="block text-[10px] md:text-lg school-font mb-2 text-[#150f96]">
             <span>주</span>
             <span className="sr-only">주의사항</span>
           </strong>
         </div>
         <div>
-          <ul className="list-decimal list-inside text-[14px]  space-y-2 text-[#767676]">
+          <ul className="list-decimal list-inside text-[8px] md:text-[14px]  space-y-2 text-[#767676]">
             <li>
-              주계약의 보험료 납입이 면제된 경우 또는 약관 제3조(“영구치”의 정의)에서 정한 “영구치”가 모두 상실된 경우에는 이 특약의 차회 이후 보험료 납입을 면제하여 드립니다.
+              주계약의 보험료 납입이 면제된 우 또는 약관 제3조(“영구치”의 정의)에서 정한 “영구치”가 모두 상실된 경우에는 이 특약의 차회 이후 보험료 납입을 면제하여 드립니다.
             </li>
             <li>
               최초계약의 경우 보철치료보장개시일은 계약일로부터 그 날을 포함하여 90일이 지난 날의 다음 날로 하며, 부활(효력회복)계약의 경우에는 부활(효력회복)일을 포함하여 90일이 지난 날의 다음날로 합니다.
@@ -449,7 +449,7 @@ const DentalInsurance: React.FC = () => {
         </div>
         <div className="mb-8  ">
 
-          <ul className="list-decimal list-inside text-[14px]  space-y-2 text-[#767676]">
+          <ul className="list-decimal list-inside text-[8px] md:text-[14px]  space-y-2 text-[#767676]">
             <li>
               주계약의 보험료 납입이 면제된 경우 이 특약의 차회 이후 보험료 납입을 면제합니다.
             </li>
@@ -472,7 +472,7 @@ const DentalInsurance: React.FC = () => {
       {/* ============ 선택특약 (무)소액치과치료특약 Section ============ */}
       <div>
         <div>
-          <h2 className="text-2xl font-semibold mb-4 text-[#150f96]">
+          <h2 className="text-[12px] md:text-2xl font-semibold mb-4 text-[#150f96]">
             선택특약
           </h2>
           <div className="flex flex-col md:flex-row md:justify-between">
@@ -610,12 +610,12 @@ const DentalInsurance: React.FC = () => {
       </div>
 
       <div className='flex flex-row gap-2 mb-8'>
-        <div><strong className="block text-lg font-semibold mb-2 text-[#150f96]">
+        <div><strong className="block text-[12px] md:text-lg font-semibold mb-2 text-[#150f96]">
           <span>주</span>
           <span className="sr-only">주의사항</span>
         </strong></div>
         <div>
-        <ul className="list-decimal list-inside text-[14px] space-y-2 text-[#767676]">
+        <ul className="list-decimal list-inside text-[8px] md:text-[14px] space-y-2 text-[#767676]">
   <li>
     주계약의 보험료 납입이 면제된 경우 또는 치아가 모두 상실된 경우에는 이 특약의 차회 이후 보험료 납입을 면제합니다.
   </li>
@@ -641,7 +641,7 @@ const DentalInsurance: React.FC = () => {
 
 
       {/* ============ 선택특약 (무)전치부보철치료보장특약 Section ============ */}
-      <h2 className="text-2xl font-semibold mb-4">선택특약</h2>
+      <h2 className="text-[15px] md:text-2xl font-semibold mb-4">선택특약</h2>
       <div className="flex flex-col md:flex-row md:justify-between">
         <p className="text-base font-bold mb-6 text-[#150f96]">
           (무)신보철치료보장특약
@@ -739,7 +739,7 @@ const DentalInsurance: React.FC = () => {
           <span className="sr-only">주의사항</span>
         </strong></div>
         <div>
-          <ul className="list-decimal list-inside text-[14px]  space-y-2 text-[#767676]">
+          <ul className="list-decimal list-inside text-[8px] md:text-[14px]  space-y-2 text-[#767676]">
             <li>
               주계약의 보험료 납입이 면제된 경우 이 특약의 차회 이후 보험료 납입을 면제하여 드립니다.
             </li>
