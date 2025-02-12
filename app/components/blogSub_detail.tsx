@@ -53,14 +53,13 @@ const InsurancePanel = () => {
                         <li>
                             The start date of dental treatment coverage is the day following the 90th day from the contract date, including that day.
                         </li>
-                        <li>
-                            The start date of coverage for reimplantation implant treatment is the day following the day when the reason for payment of implant treatment insurance occurs during the insurance period and one year has passed since the date of implant treatment for the relevant permanent tooth.
+
+                        <li className="point_01 text-[#150f96]">
+                            This insurance contract protects up to &quot;50 million won&quot; per person (combined with other protection products of this insurance company) for the sum of the surrender refund (or insurance money at maturity) and other payments in accordance with the Depositor Protection Act. In addition, the sum of the accident insurance benefits of this insurance company&apos;s protection products is protected up to &quot;50 million won&quot; per person.
                         </li>
+
                         <li>
-                            However, if the insured's insurance age is under 3 years old at the time of signing the contract or if dental treatment is due to an accident that occurred during the insurance period, the coverage commencement date specified in the terms and conditions shall apply.
-                        </li>
-                        <li>
-                            In case of dental treatment due to an accident that occurred during the insurance period, 100% of the relevant treatment insurance amount will be paid from the contract date.
+                            If the company does not deliver the insurance policy terms and conditions and the application form for the policyholder to keep when applying, or does not explain important contents of the terms and conditions, or if the policyholder does not sign the application form in his/her own handwriting (including a stamp or electronic signature) when concluding the contract, the policyholder may cancel the contract within 3 months from the date the contract was established.
                         </li>
                     </ul>
                 </div>
@@ -161,7 +160,7 @@ const InsurancePanel = () => {
                             Please read the product description and terms and conditions before signing an insurance contract (including special provisions).
                         </li>
                         <li className="point_01 text-[#150f96]">
-                            This insurance contract protects up to "50 million won" per person (combined with other protection products of this insurance company) for the sum of the surrender refund (or insurance money at maturity) and other payments in accordance with the Depositor Protection Act. In addition, the sum of the accident insurance benefits of this insurance company's protection products is protected up to "50 million won" per person.
+                            This insurance contract protects up to &rdquo;50 million won&rdquo; per person (combined with other protection products of this insurance company) for the sum of the surrender refund (or insurance money at maturity) and other payments in accordance with the Depositor Protection Act. In addition, the sum of the accident insurance benefits of this insurance company&lsquo;s protection products is protected up to &rdquo;50 million won&rdquo; per person.
                         </li>
                         <li>
                             The insured or policyholder must truthfully disclose any information that must be disclosed prior to the contract, such as current or past medical treatment. If important information, such as information that affects the occurrence of a reason for payment of insurance money, is disclosed differently from the facts, the contract may be terminated or the insurance money may not be paid.
@@ -170,7 +169,7 @@ const InsurancePanel = () => {
                             The above information to be aware of when signing up is information related to the main contract. Please read the product description and terms and conditions before signing the insurance contract. (Including special provisions)
                         </li>
                         <li>
-                            In accordance with Article 47 of the Financial Consumer Protection Act and Article 38 of the Enforcement Decree, the subscriber may request termination of the contract in writing within 1 year from the date of learning of any violation of the contract within 5 years from the date of contract conclusion. In the event of termination, the subscriber's accumulated amount at the time of termination will be returned.
+                            In accordance with Article 47 of the Financial Consumer Protection Act and Article 38 of the Enforcement Decree, the subscriber may request termination of the contract in writing within 1 year from the date of learning of any violation of the contract within 5 years from the date of contract conclusion. In the event of termination, the subscriber&lsquo;s accumulated amount at the time of termination will be returned.
                         </li>
                     </ul>
                 </div>
